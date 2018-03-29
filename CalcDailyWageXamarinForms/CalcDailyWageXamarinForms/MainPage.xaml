@@ -4,8 +4,102 @@
              xmlns:local="clr-namespace:CalcDailyWageXamarinForms"
              x:Class="CalcDailyWageXamarinForms.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <Grid>
+        <!-- Gridコントロールを上下に2分割する -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="5*" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="5*" />
 
+        </Grid.RowDefinitions>
+
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="4*" />
+
+        </Grid.ColumnDefinitions>
+
+            <Label  Text="1日ごとの給料計算(自給)" Grid.Column="1" Grid.ColumnSpan="3" />
+
+
+            <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" 
+            x:Name="Label_Message"
+             Text="出勤、退社時間" 
+            HorizontalOptions="Center"
+                   />
+
+
+
+
+            <Label Grid.Column="1" Grid.Row="2" 
+            x:Name="Label_Shukkin" 
+             Text="出勤時間" 
+                   />
+
+
+            <Label Grid.Column="3" Grid.Row="2" 
+            x:Name="Label_Taisha"
+             Text="退社時間" 
+                   />
+
+            <Editor x:Name="Editor_Shukkin" Grid.Column="1" Grid.Row="3" />
+
+
+            <Editor  x:Name="Editor_Taisha" Grid.Column="3" Grid.Row="3"  />
+
+
+
+
+            <Button Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3"
+                x:Name="Button_Calc" Text="計算"
+                />
+
+
+            <Switch  Grid.Row="3" Grid.Column="4" Margin="20,0,0,0" 
+                x:Name="Sw_Kyuukei" 
+                 IsToggled="True"
+                />
+
+
+            <Label  Grid.Row="6" Grid.Column="0"
+            x:Name="Label_ResultTS"
+             Text="" 
+            HorizontalOptions="Center" 
+                   FontSize="48"
+                   />
+
+
+            <Label Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="3" 
+            x:Name="Label_ResultMoney"
+             Text="" 
+            HorizontalOptions="Center" 
+                   FontSize="48"
+                   />
+
+
+            <Label Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="5"   Margin="0,0,0,15"
+            x:Name="Label_ResultDetail"
+             Text="" 
+            HorizontalOptions="Center" 
+                   />
+
+
+
+            <Label x:Name="txtblk_Jikyuu" Grid.Row="6" Grid.Column="4" Grid.ColumnSpan="3" 
+                 Margin="0,0,15,0"/>
+
+
+            <Button x:Name="btnSettei" Text="設定"  Grid.Row="6" Grid.Column="4" Grid.ColumnSpan="3"  
+                   Margin="0,0,20,0"  />
+
+
+    </Grid>
 </ContentPage>
