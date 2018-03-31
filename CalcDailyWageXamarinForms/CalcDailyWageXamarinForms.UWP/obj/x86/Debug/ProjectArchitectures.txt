@@ -1,1 +1,0 @@
-C:\repos\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms.UWP\CalcDailyWageXamarinForms.UWP.csproj;x86

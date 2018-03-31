@@ -1,7 +1,6 @@
 C:\repos\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\bin\Debug\netstandard2.0\CalcDailyWageXamarinForms.deps.json
 C:\repos\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\bin\Debug\netstandard2.0\CalcDailyWageXamarinForms.dll
 C:\repos\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\bin\Debug\netstandard2.0\CalcDailyWageXamarinForms.pdb
-C:\repos\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\obj\Debug\netstandard2.0\CalcDailyWageXamarinForms.csprojResolveAssemblyReference.cache
 C:\repos\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\obj\Debug\netstandard2.0\CalcDailyWageXamarinForms.csproj.CoreCompileInputs.cache
 C:\repos\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\obj\Debug\netstandard2.0\CalcDailyWageXamarinForms.App.xaml.g.cs
 C:\repos\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\obj\Debug\netstandard2.0\CalcDailyWageXamarinForms.MainPage.xaml.g.cs
@@ -9,3 +8,5 @@ C:\repos\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\CalcDailyWageXamari
 C:\repos\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\obj\Debug\netstandard2.0\CalcDailyWageXamarinForms.AssemblyInfo.cs
 C:\repos\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\obj\Debug\netstandard2.0\CalcDailyWageXamarinForms.dll
 C:\repos\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\obj\Debug\netstandard2.0\CalcDailyWageXamarinForms.pdb
+C:\repos\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\obj\Debug\netstandard2.0\CalcDailyWageXamarinForms.csprojResolveAssemblyReference.cache
+C:\repos\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\obj\Debug\netstandard2.0\CalcDailyWageXamarinForms.SettingPage.xaml.g.cs
