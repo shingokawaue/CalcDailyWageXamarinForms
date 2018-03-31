@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalcDailyWageXamarinForms.SettingPage">
+    <StackLayout HorizontalOptions = "Center"
+             VerticalOptions = "Center">
+
+        <TableView  Intent="Data" >
+            <TableView.Root>
+                <TableRoot>
+                    <TableSection Title="設定" >
+                        <EntryCell Label="時給" Placeholder="ここに入力してください"/>
+                        <SwitchCell Text="適当"/>
+                    </TableSection>
+                </TableRoot>
+            </TableView.Root>
+        </TableView>
+
+    </StackLayout>
+</ContentPage>

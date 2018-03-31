@@ -13,7 +13,7 @@ namespace CalcDailyWageXamarinForms
 		{
 			InitializeComponent();
 
-			MainPage = new CalcDailyWageXamarinForms.MainPage();
+			MainPage = new NavigationPage(new CalcDailyWageXamarinForms.MainPage());
 		}
 
 		protected override void OnStart ()

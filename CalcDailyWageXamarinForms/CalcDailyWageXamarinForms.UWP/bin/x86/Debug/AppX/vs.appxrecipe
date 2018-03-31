@@ -31,13 +31,21 @@
     <AppXManifest Include="C:\repos\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-30T08:32:14.941</Modified>
+      <Modified>2018-03-31T16:38:53.637</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\repos\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms.UWP\bin\x86\Debug\CalcDailyWageXamarinForms.UWP.exe">
       <PackagePath>entrypoint\CalcDailyWageXamarinForms.UWP.exe</PackagePath>
-      <Modified>2018-03-30T08:32:06.474</Modified>
+      <Modified>2018-03-31T16:38:47.862</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\GEISHU\.nuget\packages\pclstorage\1.0.2\lib\portable-win8+wpa81\PCLStorage.Abstractions.dll">
+      <PackagePath>PCLStorage.Abstractions.dll</PackagePath>
+      <Modified>2015-01-18T01:36:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\GEISHU\.nuget\packages\pclstorage\1.0.2\lib\portable-win8+wpa81\PCLStorage.dll">
+      <PackagePath>PCLStorage.dll</PackagePath>
+      <Modified>2015-01-18T01:36:20.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\GEISHU\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.0.1\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -713,7 +721,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\repos\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\bin\Debug\netstandard2.0\CalcDailyWageXamarinForms.dll">
       <PackagePath>CalcDailyWageXamarinForms.dll</PackagePath>
-      <Modified>2018-03-30T08:31:52.364</Modified>
+      <Modified>2018-03-31T16:38:34.210</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\repos\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -871,7 +879,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\repos\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms.UWP\bin\x86\Debug\CalcDailyWageXamarinForms.UWP.xr.xml">
       <PackagePath>CalcDailyWageXamarinForms.UWP.xr.xml</PackagePath>
-      <Modified>2018-03-29T15:48:16.525</Modified>
+      <Modified>2018-03-31T09:28:49.437</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -884,11 +892,11 @@
     <AppxPackagedFile Include="C:\repos\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-03-30T08:32:12.441</Modified>
+      <Modified>2018-03-31T16:38:52.536</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\repos\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms\CalcDailyWageXamarinForms.UWP\bin\x86\Debug\Core\CalcDailyWageXamarinForms.UWP.exe">
       <PackagePath>CalcDailyWageXamarinForms.UWP.exe</PackagePath>
-      <Modified>2018-03-30T08:32:14.910</Modified>
+      <Modified>2018-03-31T16:38:53.625</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

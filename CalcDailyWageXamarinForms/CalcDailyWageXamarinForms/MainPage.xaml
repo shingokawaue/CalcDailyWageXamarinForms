@@ -4,101 +4,124 @@
              xmlns:local="clr-namespace:CalcDailyWageXamarinForms"
              x:Class="CalcDailyWageXamarinForms.MainPage">
 
+
     <Grid>
         <!-- Gridコントロールを上下に2分割する -->
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="5*" />
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="auto" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="2*" />
             <RowDefinition Height="*" />
-            <RowDefinition Height="5*" />
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
 
         </Grid.RowDefinitions>
 
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="4*" />
-            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="auto" />
             <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="3*" />
-            <ColumnDefinition Width="4*" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="2*" />
 
         </Grid.ColumnDefinitions>
 
-            <Label  Text="1日ごとの給料計算(自給)" Grid.Column="1" Grid.ColumnSpan="3" />
+        <Label  Text="1日ごとの給料計算(自給)" Grid.Column="1" Grid.ColumnSpan="3" />
 
 
-            <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" 
+        <Label Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" 
             x:Name="Label_Message"
-             Text="出勤、退社時間" 
+             Text="" 
             HorizontalOptions="Center"
                    />
 
+        
+        <StackLayout Grid.Column="1" Grid.Row="3" VerticalOptions="CenterAndExpand">
+
+            <Label Text="出勤時間" HorizontalOptions="Center" />
+
+            <TimePicker x:Name="TpShukkin" Format="HH:mm"                  
+                    PropertyChanged="OnTpShukkin_PropertyChanged"                  
+                    Margin="10, 0" />
+
+            <Entry
+                x:Name="Entry_Shukkin" Placeholder="出勤時間"  HorizontalOptions="Center" WidthRequest="120"
+                TextChanged="OnEntry_Shukkin_TextChanged" Unfocused="OnEntry_Shukkin_Unfocused" Completed="OnEntry_Shukkin_Completed" >
+                
+                <Entry.IsVisible>
+                    <OnPlatform x:TypeArguments="x:Boolean"
+                            iOS="False"
+                            WinPhone="True"
+                />
+                </Entry.IsVisible>
+
+
+            </Entry>
+
+        </StackLayout>
+
+
+        <StackLayout Grid.Column="3" Grid.Row="3" VerticalOptions="CenterAndExpand">
+            
+            <Label Text="退社時間" HorizontalOptions="Center" />
+
+            <TimePicker x:Name="TpTaisha" Format="HH:mm"                    
+                    PropertyChanged="OnTpTaisha_PropertyChanged"
+                    Margin="10, 0" />
+
+            <Entry  x:Name="Entry_Taisha" Placeholder="退社時間"     HorizontalOptions="Center"  WidthRequest="120"
+                TextChanged="OnEntry_Taisha_TextChanged" Unfocused="OnEntry_Taisha_Unfocused"  Completed="OnEntry_Taisha_Completed" >
+                <Entry.IsVisible>
+                    <OnPlatform x:TypeArguments="x:Boolean"
+                            iOS="False"
+                            WinPhone="True"                            
+                />
+                </Entry.IsVisible>
+            </Entry>
+        </StackLayout>
 
 
 
-            <Label Grid.Column="1" Grid.Row="2" 
-            x:Name="Label_Shukkin" 
-             Text="出勤時間" 
-                   />
 
-
-            <Label Grid.Column="3" Grid.Row="2" 
-            x:Name="Label_Taisha"
-             Text="退社時間" 
-                   />
-
-            <Editor x:Name="Editor_Shukkin" Grid.Column="1" Grid.Row="3" />
-
-
-            <Editor  x:Name="Editor_Taisha" Grid.Column="3" Grid.Row="3"  />
-
-
-
-
-            <Button Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3"
+        <Button Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="3"
                 x:Name="Button_Calc" Text="計算"
+                FontSize="20"
+                Clicked="Button_Calc_Click"
                 />
 
+        <StackLayout Grid.Row="5" Grid.Column="4" Margin="20,0,0,0"  >
+            <Label x:Name="lblKyuukei" 
+                   Text="休憩"
+                   />
 
-            <Switch  Grid.Row="3" Grid.Column="4" Margin="20,0,0,0" 
+            <Switch  
                 x:Name="Sw_Kyuukei" 
                  IsToggled="True"
+                Toggled="OnSw_Kyuukei_Toggled"
                 />
+        </StackLayout>
 
-
-            <Label  Grid.Row="6" Grid.Column="0"
-            x:Name="Label_ResultTS"
-             Text="" 
-            HorizontalOptions="Center" 
-                   FontSize="48"
-                   />
-
-
-            <Label Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="3" 
-            x:Name="Label_ResultMoney"
-             Text="" 
-            HorizontalOptions="Center" 
-                   FontSize="48"
-                   />
-
-
-            <Label Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="5"   Margin="0,0,0,15"
+        <Label Grid.Row="7" Grid.RowSpan="4" Grid.Column="1" Grid.ColumnSpan="3" 
             x:Name="Label_ResultDetail"
              Text="" 
-            HorizontalOptions="Center" 
+            HorizontalOptions="Start" 
                    />
 
+        <Label Grid.Row="9" Grid.RowSpan="3" Grid.Column="1" Grid.ColumnSpan="3" 
+            x:Name="Label_ResultDailyWages"
+             Text="" 
+            HorizontalOptions="StartAndExpand"
+                   />
 
-
-            <Label x:Name="txtblk_Jikyuu" Grid.Row="6" Grid.Column="4" Grid.ColumnSpan="3" 
-                 Margin="0,0,15,0"/>
-
-
-            <Button x:Name="btnSettei" Text="設定"  Grid.Row="6" Grid.Column="4" Grid.ColumnSpan="3"  
-                   Margin="0,0,20,0"  />
+        <Button x:Name="btnSettei" Text="設定"  Grid.Row="8" Grid.Column="4"
+                   FontSize="20" Margin="0,0,20,0"  
+                Clicked="OnbtnSetteiClicked"
+                />
 
 
     </Grid>
